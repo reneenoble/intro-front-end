@@ -1,7 +1,5 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
-    width: 500px;
-    margin: 50px 20px 20px 40px;
 }
 
 h1 {
@@ -14,3 +12,80 @@ h1 {
 h3 {
     color: #16521a;
 }
+
+main {
+    width: 600px;
+    margin: 50px 20px 20px 40px;
+}
+
+#tag-lines {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+span {
+    background-color: limegreen;
+    width: 50px;
+    font-size: 40px;
+}
+
+#bio {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border: thick double green;
+    border-left: none;
+    border-right: none;
+}
+
+#bio > h3 {
+    /* color: yellow; */
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#bio > p {
+    margin-top: 10px;
+}
+
+.pic-text {
+    display: inline-block;
+    /* width: 30px; */
+    width: 49%;
+}
+
+.split-pic > img {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+li {
+    background-color: limegreen;
+    margin: 5px;
+    padding: 5px;
+    /* display: block; */
+    color: white;
+    border-radius: 2px;
+}
+
+li > a {
+    text-decoration: none;
+    color: white;
+}
+
+li:hover {
+    background-color: green; 
+}
+
+
