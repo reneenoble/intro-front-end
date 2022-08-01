@@ -13,6 +13,13 @@
     <body>
         <h1>In<br> the<br> Code<br> Garden</h1>
 
+        <ul id="topnav" class="flex-container">
+            <li class="flex-item" ><a href="#home">Home</a></li>
+            <li class="flex-item" ><a href="#bio"><div>Who Am I</div></a></li>
+            <li class="flex-item" ><a href="#topics"><div>Topics so far</div></a></li>
+            <li class="flex-item" ><a href="#puzzle"><div>Python puzzle</div></a></li>
+        </ul>
+
         <main>
             <h3 id="tag-lines">
                 Join me, Renee Noble, to <span>grow</span> your coding skills!
@@ -49,18 +56,37 @@
             
 
 
-            <h3>Topics so far:</h3>
-            <ul>
+            <h3 id="topics">Topics so far:</h3>
+            <ul id="topics-list">
                 <li><a href="python-intro.html">Intro to <strong>Python</strong></a></li>
                 <li>Essential Python <<strong>Data Structures</strong></li>
                 <li><strong>Data Science</strong> and Visualisiation with Python</li>
                 <li><strong>Front-End</strong> Web Development Basics</li>
 
             </ul>
-            </body>
+            
+            <div id="puzzle">
+                <h3>Try this Python Puzzle!</h3>
+                <img id="puzzlImg" src="img/puzzle.png">
+
+            </div>
+
+            <form>
+                <label for="answer">What prints out?</label><br>
+                <input type="text" id="answer">
+                <input type="submit" id="answerButton">
+            </form>
+
+            <img id="winImg"></img>
+            <h4 hidden id="guessHeader">Guesses</h4>
+            <ul id="guesses"></ul>
+
+
         </main>
+
+
 
     </body>
 
-
+    <script type="text/javascript" src="script.js"></script>
 </html>

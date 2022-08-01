@@ -65,12 +65,12 @@ span {
     margin-top: 5px;
 }
 
-ul {
+#topic-list {
     list-style-type: none;
     padding-left: 0px;
 }
 
-li {
+#topics-list li {
     background-color: limegreen;
     margin: 5px;
     padding: 5px;
@@ -79,13 +79,61 @@ li {
     border-radius: 2px;
 }
 
-li > a {
+#topics-list li > a {
     text-decoration: none;
     color: white;
 }
 
-li:hover {
+#topics-list li:hover {
     background-color: green; 
 }
 
+.correct {
+    color: limegreen;
+}
 
+.incorrect {
+    color: red;
+}
+
+.flex-container {
+    padding: 0px;
+    list-style-type: none;
+    align-items: center;
+    margin: 0px;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 1;
+}
+
+.flex-item {
+    margin-left: 2px;
+    flex-basis: 180px;
+    background-color: green;
+    text-align: center;
+    flex-flow: row wrap;
+    flex-grow: 1;
+}
+
+.flex-item:first-child {
+    margin-left: 0px; 
+    flex-grow: 1;
+ }
+
+ .flex-item a {
+    /* float: left; */
+    display: inline-block;
+    padding: 14px 16px;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 0px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: orange;
+    }
+  }
